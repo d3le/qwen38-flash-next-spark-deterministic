@@ -103,6 +103,22 @@ workloads/ 262K-token surrogate prompt (token ids)
 ## License
 
 The scripts and tools in this repository are under the Apache License 2.0 (`LICENSE`).
-The model weights are under the [NVIDIA Open Model License](https://huggingface.co/nvidia/Qwen3.8-Flash-Next-NVFP4)
-of the base checkpoint; this repository does not redistribute them, and the converted shards you
-build locally remain subject to that license. SGLang is Apache-2.0.
+
+Third-party components and terms:
+
+- **Model**: `nvidia/Qwen3.8-Flash-Next-NVFP4` is licensed by NVIDIA Corporation under the
+  [NVIDIA Open Model License](https://huggingface.co/nvidia/Qwen3.8-Flash-Next-NVFP4); see its model
+  card for the terms of the underlying Qwen model. This repository does not redistribute any weights.
+  `scripts/download.sh` fetches them from Hugging Face, and the FP8 shards built by
+  `scripts/convert.sh` stay subject to those terms. The files in `data/` are calibration scales,
+  token ids and output hashes, not weights.
+- **Container image**: built on an NVIDIA CUDA container and distributed as a derived container
+  under the NVIDIA Deep Learning Container License (`/NGC-DL-CONTAINER-LICENSE` in the image).
+  NVIDIA proprietary software in it (such as CUDA) is licensed to run only on systems with NVIDIA
+  GPUs. It also contains SGLang (Apache-2.0), PyTorch, FlashInfer and other open-source packages
+  under their own licenses.
+- **SGLang fork**: [`d3le/sglang@release/qwen38-spark`](https://github.com/d3le/sglang/tree/release/qwen38-spark),
+  Apache-2.0.
+
+This project is independent and is not sponsored or endorsed by NVIDIA, Alibaba/Qwen or the SGLang
+project.
