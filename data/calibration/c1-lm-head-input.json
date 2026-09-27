@@ -1,0 +1,39 @@
+{
+  "calibrated_amax": 183.75,
+  "call_count_at_flush": 341,
+  "dtype": "torch.bfloat16",
+  "fp8_e4m3_max": 448.0,
+  "input_index": 1,
+  "input_scale": 0.41015625,
+  "module_name": "lm_head_input",
+  "observed_max_abs": 175.0,
+  "observed_shapes": [
+    [
+      1,
+      2560
+    ],
+    [
+      13,
+      2560
+    ],
+    [
+      23,
+      2560
+    ],
+    [
+      24,
+      2560
+    ],
+    [
+      35,
+      2560
+    ],
+    [
+      4096,
+      2560
+    ]
+  ],
+  "pid": 131,
+  "safety_margin": 1.05,
+  "token_rows_at_flush": 4527
+}
