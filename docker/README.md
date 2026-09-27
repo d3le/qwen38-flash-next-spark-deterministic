@@ -1,6 +1,6 @@
 # Release image
 
-`ghcr.io/d3le/qwen38-flash-next-spark-deterministic:v0.1` is the exact environment the
+`ghcr.io/d3le/qwen38-flash-next-spark-deterministic:v0.1` (`sha256:6a28e4bfca88210b58c6dffe2616effd5417f5ff85a2f6e65f1ceaaf94cd85f5`) is the exact environment the
 reference outputs were measured in:
 
 1. The SGLang trial build `sgl-project/sglang@32a6f3bb7` (CUDA 13.0.3, arm64, SM121), with its

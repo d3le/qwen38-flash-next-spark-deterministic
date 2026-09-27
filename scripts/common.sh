@@ -16,7 +16,8 @@ C1_DIR=$QWEN38_ROOT/c1
 C2_DIR=$QWEN38_ROOT/c2
 PLE_DIR=${PLE_DIR:-$QWEN38_ROOT/ple}
 CACHE_DIR=${CACHE_DIR:-$QWEN38_ROOT/cache}
-IMAGE=${IMAGE:-ghcr.io/d3le/qwen38-flash-next-spark-deterministic:v0.1}
+# v0.1, pinned by digest so the verified environment cannot change under the tag
+IMAGE=${IMAGE:-ghcr.io/d3le/qwen38-flash-next-spark-deterministic@sha256:6a28e4bfca88210b58c6dffe2616effd5417f5ff85a2f6e65f1ceaaf94cd85f5}
 CONTAINER=${CONTAINER:-qwen38}
 HOST=${HOST:-127.0.0.1}
 PORT=${PORT:-30000}

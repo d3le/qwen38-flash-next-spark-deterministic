@@ -54,7 +54,7 @@ Decode speed depends mostly on how many draft tokens are accepted, so it varies 
 git clone https://github.com/d3le/qwen38-flash-next-spark-deterministic.git
 cd qwen38-flash-next-spark-deterministic
 cp .env.sample .env            # optional: change QWEN38_ROOT (default ~/qwen38)
-docker pull ghcr.io/d3le/qwen38-flash-next-spark-deterministic:v0.1
+docker pull ghcr.io/d3le/qwen38-flash-next-spark-deterministic@sha256:6a28e4bfca88210b58c6dffe2616effd5417f5ff85a2f6e65f1ceaaf94cd85f5   # v0.1
 scripts/download.sh            # 124 GiB, sha256-verified against the pinned revision
 scripts/convert.sh             # ~10 min, sha256-verified
 scripts/start.sh               # ~12 min to healthy (the first start also writes the 48 GiB PLE table)
